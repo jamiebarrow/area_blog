@@ -60,6 +60,7 @@ For example, if we had a continuous integration build, and we just wanted to upd
 
 <h4>Links</h4>
 
+- [Setting Assembly Attributes](https://docs.microsoft.com/en-us/dotnet/standard/assembly/set-attributes)
+- [What are differences between AssemblyVersion, AssemblyFileVersion and AssemblyInformationalVersion?](https://stackoverflow.com/q/64602/222090)
 - [Sample Code](https://github.com/jamiebarrow/CommonAssemblyInfoDemo)
-    - [Setting Assembly Attributes](https://docs.microsoft.com/en-us/dotnet/standard/assembly/set-attributes)
-    - [What are differences between AssemblyVersion, AssemblyFileVersion and AssemblyInformationalVersion?](https://stackoverflow.com/q/64602/222090)
+    - Update: 2024: I have since removed this repo, if you want this, please contact me
