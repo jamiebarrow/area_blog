@@ -42,3 +42,23 @@ Legacy-systemen vertonen vaak problemen:
 - Hoge operationele kosten: leggen een zware last op het bedrijf
 - Slechte onderhoudbaarheid: complexe, moeilijk te begrijpen code leidt tot trage ontwikkeling en oplossingen
 
+## Moderne Platforms
+
+Legacy-systemen die afhankelijk zijn van specifieke hardware (bijv. COBOL-systemen) moeten naar nieuwe platforms migreren, omdat die specifieke hardware wordt achterhaald door nieuwe innovaties. Als de hardware niet meer wordt geproduceerd,heeft een bedrijf geen andere optie dan modernisering.
+
+Java, Docker en Kubernetes gedijen dankzij hun platformonafhandkelijkheid,
+die een "write once, run anywhere" aanpak faciliteerd, kosten verlaagt en de onderhoudbaarheid vereenvoudigt.
+Flexibiliteit stuwt ook de populariteit van Python, C# en JavaScript.
+
+Veel industrieën, vooral bankwezen en de overheid, zijn afhankelijk van COBOL, maar gebruiken hun huidige ervaring met Java voor nieuwe systemen.
+Technologiekeuzes zijn slechts één onderdeel van de puzzel.
+Goed systeemontwerp, duidelijke documentatie en onderhoudbaarheid zijn belangrijker voor het vereenvoudigen van complexe legacy-processen.
+
+Het provisioneren van omgevingen wordt geoptimaliseerd door cloudcomputing en tools zoals Bicep en Terraform. Standaard-API's en verbeterde integraties versnellen de ontwikkeling, hoewel de complexiteit toeneemt door de interconnecties.
+
+Het moderne landschap is niet alleen een tuin, maar een divers onderling verbonden bos: een ecosysteem.
+
+## Noodzaak is de moeder van de uitvinding
+
+Innovatie komt voort uit noodzaak.
+Tijdens de COVID-19 pandemie moesten bedrijven zich snel aanpassen aan thuiswerken. 
