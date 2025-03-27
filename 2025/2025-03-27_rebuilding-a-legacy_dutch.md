@@ -7,11 +7,11 @@ Sommige planten gedijen in de schaduw, andere in het zonlicht en insecten ("bugs
 Legacy-systemen worstelen vaak met performance, beveiliging, en privacy.
 Het modernisering van deze systemen door hedendaagse frameworks en programmeertalen te omarmen, kan helpen om deze uitdagingen aan te pakken.
 
-In samenwerken met ShareValue kun je je zakelijke behoeften focusseren, terwijl wij jouw IT-landschap tuineren.
+In samenwerken met ShareValue kun je je zakelijke behoeften focusseren, terwijl wij jouw IT-landschap 'tuineren'.
 
 ## Aandrijvende krachten
 
-Er zijn twee manieren om "Legacy" te bekijken:
+Er zijn twee manieren om "legacy" te bekijken:
 
 - Negatief: ouderwets en verouderd
 - Positief: een erfenis die heeft bijgedragen aan het succes van het verleden
@@ -62,3 +62,30 @@ Het moderne landschap is niet alleen een tuin, maar een divers onderling verbond
 
 Innovatie komt voort uit noodzaak.
 Tijdens de COVID-19 pandemie moesten bedrijven zich snel aanpassen aan thuiswerken. 
+Net als een tuin gedijt wanneer deze gekoesterd wordt en zich aan veranderende omstandigheden aanpast, hebben softwaresystemen continue aandacht nodig.
+Net als een goed onderhouden tuin die bloeit door zorg.
+
+## Zaden zaaien
+
+Om iets te verbeteren, moet je eerst bepaalde metingen verkrijgen.
+Als je gelooft dat klanten gelukkig zijn, is het pas een overtuiging totdat het wordt bewezen door het ophalen van klantfeedback.
+Je weet niet of een traag proces verbeterd kan worden totdat je de metingen van de snelheid kunt controleren.
+
+Data-analyse is de sleutel tot het nemen van weloverwogen beslissingen.
+Zonder data blijven ideëen en voorstellen subjectief.
+Gebruik de wetenschappelijke methode: stel een hypothese op, voer een experiment uit, analyseer de resultaten en trek objectieve conclusies.
+
+## Veldproeven en experimenten
+
+Feedback kan aangeven dat je systeem of de teamreactietijden traag zijn.
+Je kunt dit meten met verschillende testen:
+
+- Prestaties: meet API-reactietijden en databasequerytijden 
+- UX: volg het aantal acties en wachttijden tijdens gebruikersactiviteiten
+- A/B-test: verdeel gebruikers in twee groepen, A en B, met verschillende ervaringen, om tevredenhijd te meten
+- Onderhoudbaarheid: analyseer metingen van de code (bijv. cyclomatische complexiteit)
+- Beveliging: probeer bekende beveiligingsaanvalsmethoden om de systeemintegriteit te waarborgen en mogelijke kwetsbaarheden te identificeren
+
+## Inzichten oogsten
+
+
