@@ -5,9 +5,9 @@ Een tuin is een betere metafoor.
 Sommige planten gedijen in de schaduw, andere in het zonlicht en insecten ("bugs") en onkruid moeten constant beheer worden.
 
 Legacy-systemen worstelen vaak met performance, beveiliging, en privacy.
-Het modernisering van deze systemen door hedendaagse frameworks en programmeertalen te omarmen, kan helpen om deze uitdagingen aan te pakken.
+Het moderniseren van deze systemen door hedendaagse frameworks en programmeertalen te omarmen, kan helpen om deze uitdagingen aan te pakken.
 
-In samenwerken met ShareValue kun je je zakelijke behoeften focusseren, terwijl wij jouw IT-landschap 'tuineren'.
+In samenwerken met ShareValue kun je je zakelijke behoeften focussen, terwijl wij jouw IT-landschap 'tuineren'.
 
 ## Aandrijvende krachten
 
@@ -24,7 +24,7 @@ Milieuveranderingen - veranderingen in de omgeving - vragen om aanpassing.
 De gewassen hebben speciale omstandigheden nodig om te gedijen en boeren moeten die roteren om gezonde grond te beheren.
 Evenzo moeten softwareontwikkelaars hun systemen evolueren om moderne omstandigheden te beheren, zoals opschalen en prestatieverbeteren.
 
-Het is goedkoper om werknemers bij te scholen dan ze te verplaatsen, evan als de vernieuwing van huidige software praktischer dan deze opnieuw te bouwen.
+Het is goedkoper om werknemers bij te scholen dan ze te verplaatsen, evanals de vernieuwing van huidige software praktischer dan deze opnieuw te bouwen.
 Maar als er fundamenteel gebrekkige software is, zou opnieuw bouwen de enige optie zijn.
 
 ## Het landschap
@@ -45,7 +45,7 @@ Legacy-systemen vertonen vaak problemen:
 Legacy-systemen die afhankelijk zijn van specifieke hardware (bijv. COBOL-systemen) moeten naar nieuwe platforms migreren, omdat die specifieke hardware wordt achterhaald door nieuwe innovaties.
 Als de hardware niet meer wordt geproduceerd,heeft een bedrijf geen andere optie dan modernisering.
 
-Java, Docker en Kubernetes gedijen dankzij hun platformonafhandkelijkheid, die een "write once, run anywhere" aanpak faciliteerd, kosten verlaagt en de onderhoudbaarheid vereenvoudigt.
+Java, Docker en Kubernetes gedijen dankzij hun platformonafhandkelijkheid, die een "write once, run anywhere" aanpak gefaciliteerd, kosten verlaagt en de onderhoudbaarheid vereenvoudigt.
 Flexibiliteit stuwt ook de populariteit van Python, C# en JavaScript.
 
 Veel industrieën, vooral bankwezen en de overheid, zijn afhankelijk van COBOL, maar gebruiken hun huidige ervaring met Java voor nieuwe systemen.
