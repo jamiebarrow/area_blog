@@ -1,5 +1,7 @@
 # Modernizing Legacy Systems: Maintain your IT Garden
 
+![The digital garden](./images/2025-04-03_digital-garden.png)
+
 You often hear it: software development is like building a house.
 But that comparison doesn't always hold.
 A house remains the same for years, while software constantly evolves.

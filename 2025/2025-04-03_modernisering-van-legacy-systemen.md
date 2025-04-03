@@ -1,5 +1,7 @@
 # Modernisering van legacy-systemen: onderhoud je IT-tuin
 
+![De digitale tuin](./images/2025-04-03_digital-garden.png)
+
 Je hoort het vaak: software is als het bouwen van een huis.
 Maar die vergelijking gaat niet altijd op.
 Een huis blijft jarenlang hetzelfde, terwijl software continu verandert.
