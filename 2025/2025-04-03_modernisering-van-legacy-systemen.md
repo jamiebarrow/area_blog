@@ -79,6 +79,249 @@ Denk aan:
 
 Door moderne talen te gebruiken, voorkom je veel voorkomende bugs en verklein je het aanvalsoppervlak van je software.
 
+```java
+import java.util.Objects;
+
+public class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() { return name; }
+    public int getAge() { return age; }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        // ❌ BUG: Missing comparison with the age 
+        return Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
+
+    @Override
+    public String toString() {
+        return "Person{name='" + name + "', age=" + age + "}";
+    }
+}
+```
+
+```java
+import lombok.Data;
+
+// ✅ Lombok's Data annotation causes the code to be generated
+@Data
+public class User {
+    private String name;
+    private int age;
+}
+```
+
+```kotlin
+// ✅ Kotlin's data class simplifies it even further
+data class User(val name: String, val age: Int)
+```
+
+```csharp
+using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+
+public class Person : INotifyPropertyChanged
+{
+    private string _name;
+    private int _age;
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public string Name
+    {
+        get => _name;
+        set
+        {
+            if (_name != value)
+            {
+                _name = value;
+                // ⚠️ Newer developers may forget to call OnPropertyChanged
+                OnPropertyChanged();
+            }
+        }
+    }
+
+    public int Age
+    {
+        get => _age;
+        set
+        {
+            if (_age != value)
+            {
+                _age = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+
+    // ⚠️ This behavior could be repeated throughout the code
+    protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = "")
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+}
+```
+
+```csharp
+using CommunityToolkit.Mvvm.ComponentModel;
+
+// ✅ MVVM Toolkit supports .NET Standard & provides base functionality
+public partial class Person : ObservableObject
+{
+    // ✅ .NET source generators improve runtime performance
+    [ObservableProperty] 
+    private string _name;
+
+    [ObservableProperty]
+    private int _age;
+}
+```
+
+```cpp
+#include <iostream>
+
+void badMemoryManagement() {
+    int* ptr = new int(10);
+    delete ptr; // Memory freed
+    
+    // ❌ BAD: Undefined behavior!
+    std::cout << *ptr; // Accessing freed memory.
+}
+
+int main() {
+    badMemoryManagement();
+    return 0;
+}
+```
+
+```rust
+fn bad_memory_management() {
+    let ptr = Box::new(10); // Heap allocation
+    let reference = &*ptr;  // Borrow the value
+    drop(ptr); // Move ownership out and drop the memory
+    println!("{}", reference); // ❌ ERROR: Borrow after move
+}
+
+fn main() {
+    bad_memory_management();
+}
+```
+
+```shell
+error[E0505]: cannot move out of `ptr` because it is borrowed
+ --> src/main.rs:4:10
+  |
+2 |     let ptr = Box::new(10); // Heap allocation
+  |         --- binding `ptr` declared here
+3 |     let reference = &*ptr;  // Borrow the value
+  |                     ----- borrow of `*ptr` occurs here
+4 |     drop(ptr); // Move ownership out and drop the memory
+  |          ^^^ move out of `ptr` occurs here
+5 |     println!("{}", reference); // ❌ ERROR: Borrow after move
+  |                    --------- borrow later used here
+  |
+help: consider cloning the value if the performance cost is acceptable
+  |
+3 -     let reference = &*ptr;  // Borrow the value
+3 +     let reference = &ptr.clone();  // Borrow the value
+  |
+
+For more information about this error, try `rustc --explain E0505`.
+error: could not compile `playground` (bin "playground") due to 1 previous error
+```
+
+```rust
+fn safe_memory_management() {
+    let data = vec![10]; // Owned by 'data'
+    let ref_data = &data[0]; // Borrowed reference
+
+    println!("{}", ref_data); // Safe access; cannot be used after data is freed
+}
+
+fn main() {
+    safe_memory_management();
+}
+```
+
+```javascript
+function fetchData() {
+    return new Promise((resolve) =>
+        setTimeout(() => resolve("Data 1"), 1000)
+    );
+}
+
+function fetchMoreData() {
+    return new Promise((resolve) =>
+        setTimeout(() => resolve("Data 2"), 1000)
+    );
+}
+
+// ❌ BAD: Nested Promises create unnecessary sequential execution
+fetchData().then(data1 => {
+    console.log(data1);
+    fetchMoreData().then(data2 => {
+        // ❌ Nested promises are more difficult to understand
+        console.log(data2);
+    });
+});
+```
+
+```javascript
+const result = Promise.all([
+    fetchData().then(data1 => console.log(data1)),
+    fetchMoreData().then(data2 => console.log(data2))
+]);
+
+// ❌ This may print before promises resolve!
+console.log("Finished processing!");
+```
+
+
+```typescript
+// ✅ TypeScript's strong typing of results aids developers
+async function fetchData(): Promise<string> {
+    return new Promise(resolve =>
+        setTimeout(() => resolve("Data 1"), 1000)
+    );
+}
+
+async function fetchMoreData(): Promise<string> {
+    return new Promise(resolve =>
+        setTimeout(() => resolve("Data 2"), 1000)
+    );
+}
+
+// ✅ async/await simplifies asynchronous logic & readability
+async function fetchAllData() {
+    
+    const [data1, data2] = await Promise.all([
+        fetchData(),
+        fetchMoreData()
+    ]);
+    console.log(data1, data2);
+    console.log("Finished processing!");
+}
+
+fetchAllData();
+```
+
+
 ## Voorkom wildgroei
 
 Softwarecode die je niet onderhoudt, groeit uit tot een verwilderde struik.
