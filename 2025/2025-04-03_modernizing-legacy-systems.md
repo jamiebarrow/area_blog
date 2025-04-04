@@ -30,6 +30,9 @@ But if a system is fundamentally flawed, rebuilding may be the only option.
 ## What is a Legacy System?
 
 A system is considered legacy when it is built in older languages like COBOL or C++, runs on specific (often discontinued) hardware, and is difficult to maintain.
+
+Even newer systems and software that are 5-10 years old, such as .NET Framework, NodeJS or Java, can be considered legacy if they are difficult to maintain or integrate.
+
 Common problems include:
 
 - Poor performance and slow response times

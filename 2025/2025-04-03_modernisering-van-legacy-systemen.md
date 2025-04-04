@@ -29,6 +29,9 @@ Maar als een systeem fundamenteel gebrekkig is, kan herbouw de enige oplossing z
 ## Wat is een legacy-systeem?
 
 We spreken van legacy als systemen gebouwd zijn in oudere talen als COBOL of C++, draaien op specifieke (vaak niet meer leverbare) hardware en moeilijk zijn te onderhouden.
+
+Ook nieuwere systemen en software van 5-10 jaar oud, zoals .NET Framework, NodeJS of Java, kan als legacy gelden wanneer deze lastig te onderhouden of te integreren is.
+
 Veelvoorkomende problemen zijn:
 
 - Slechte prestaties en trage reacties
