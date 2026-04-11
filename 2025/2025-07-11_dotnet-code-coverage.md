@@ -24,3 +24,7 @@ This will generate reports in a format for other tooling, and then the report ge
 ```shell
 $ reportgenerator -reports:"**/coverage.cobertura.xml" -targetdir:"coverage" -reporttypes:Html
 ```
+
+## References
+
+- [Microsoft Learn - Use code coverage for unit testing](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-code-coverage)
